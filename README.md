@@ -1,2 +1,2 @@
-"#Dot Picture to Yaskawa JOB"  
+"#Picture to Yaskawa JOB"  
 
