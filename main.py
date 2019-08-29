@@ -1,4 +1,4 @@
-#  -*- coding: cp1254 -*-
+
 from gui import GUI
 from tkinter import messagebox,filedialog
 from tkinter import *
@@ -19,7 +19,7 @@ def SelectPic():
 
     """
     global My_GUI,root,pic_path,pixel_rate
-    pic_path = filedialog.askopenfilename(filetypes = (("JPG Dosyasý", "*.jpg"),("PNG Dosyasý", "*.png")))
+    pic_path = filedialog.askopenfilename(filetypes = (("JPG DosyasÃ½", "*.jpg"),("PNG DosyasÃ½", "*.png")))
 
     if not pic_path== '':
             My_GUI.PicLabel.delete(0,END)
@@ -27,7 +27,7 @@ def SelectPic():
             try:
                 img = Image.open(pic_path)
             except:
-                messagebox.showerror("Hata", "Geçersiz resim dosyasý !!!", parent=root)
+                messagebox.showerror("Hata", "GeÃ§ersiz resim dosyasÃ½ !!!", parent=root)
 
             if img.mode == 'RGBA':
                 r,g,b,a = img.split()
@@ -40,11 +40,11 @@ def SelectPic():
                 My_GUI.PicHeight.insert(0,height_org)
                 My_GUI.Picwidth.insert(0,width_org)
                 pixel_rate=width_org/height_org
-                My_GUI.ProgressLabel.configure(text="Resim yüklendi.")
+                My_GUI.ProgressLabel.configure(text="Resim yÃ¼klendi.")
             else:
-                messagebox.showerror("Hata", "Geçersiz resim dosyasý, lütfen  .png veya .jpg formatý kullanýn.", parent=root)
+                messagebox.showerror("Hata", "GeÃ§ersiz resim dosyasÃ½, lÃ¼tfen  .png veya .jpg formatÃ½ kullanÃ½n.", parent=root)
     else:
-            messagebox.showerror("Hata", "Dosya seçilmedi !!!", parent=root)
+            messagebox.showerror("Hata", "Dosya seÃ§ilmedi !!!", parent=root)
 
 
 
@@ -84,7 +84,7 @@ def CreateJob():
     """
     global root,My_GUI,pic_path
     pic_path=My_GUI.PicLabel.get()
-    My_GUI.ProgressLabel.configure(text="Resim iþleniyor ...")
+    My_GUI.ProgressLabel.configure(text="Resim iÃ¾leniyor ...")
     if not pic_path == '':
         img = Image.open(pic_path)
         if img.mode == 'RGBA':
@@ -120,13 +120,13 @@ def CreateJob():
             time.sleep(0.01)
             print_progress(progress_count)
         file_count = math.ceil(data_size/max_dots)
-        My_GUI.ProgressLabel2.configure(text="Pixel Sayýsý: "+str(data_size)+", Max nokta: "+str(max_dots)+", Dosyasý sayýsý: "+str(file_count))
+        My_GUI.ProgressLabel2.configure(text="Pixel SayÃ½sÃ½: "+str(data_size)+", Max nokta: "+str(max_dots)+", DosyasÃ½ sayÃ½sÃ½: "+str(file_count))
         
         time.sleep(3)
         print_progress(0)
         for i in range(file_count):
             jobname=(My_GUI.JobName.get()+'-'+str(i+1)).upper()
-            My_GUI.ProgressLabel.configure(text=jobname+" dosyasý hazýrlanýyor...")
+            My_GUI.ProgressLabel.configure(text=jobname+" dosyasÃ½ hazÃ½rlanÃ½yor...")
             
             with open(jobname+'.JBI', 'w') as output:
                 start = int(i*max_dots)
@@ -177,19 +177,19 @@ def CreateJob():
                 output.write("END\n")
                 output.close()
     
-        messagebox.showinfo("Bilgi", "Resim koordinatlarý baþarýlý þekilde iþlenerek dosyalara yazýldý.", parent=root)
+        messagebox.showinfo("Bilgi", "Resim koordinatlarÃ½ baÃ¾arÃ½lÃ½ Ã¾ekilde iÃ¾lenerek dosyalara yazÃ½ldÃ½.", parent=root)
         My_GUI.ProgressLabel.configure(text="")
         My_GUI.ProgressLabel2.configure(text="")
         print_progress(0)
     else:
-        messagebox.showerror("Hata", "Dosya seçilmedi !!!", parent=root)
+        messagebox.showerror("Hata", "Dosya seÃ§ilmedi !!!", parent=root)
 
 def job_to_picture():
     """job_to_picture [Create picture from given job files]:
             
     
     """
-    pics = filedialog.askopenfilenames(filetypes = (("Job Dosyasý", "*.JBI"),))
+    pics = filedialog.askopenfilenames(filetypes = (("Job DosyasÃ½", "*.JBI"),))
     lst = list(pics)
     data_x=[]
     data_y=[]
@@ -219,7 +219,7 @@ def job_to_picture():
         img = img.rotate(180)
         img = img.transpose(Image.FLIP_LEFT_RIGHT)
         img.show()  
-        messagebox.showinfo("Bilgi", "Koordinatlarýn resmi oluþturuldu.", parent=root)
+        messagebox.showinfo("Bilgi", "KoordinatlarÃ½n resmi oluÃ¾turuldu.", parent=root)
 
 def height_changed(event):
     """height_changed [recalculate weight]:
