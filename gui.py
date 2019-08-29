@@ -1,4 +1,3 @@
-#  -*- coding: cp1254 -*-
 import tkinter.ttk as ttk
 
 class GUI:
@@ -36,7 +35,7 @@ class GUI:
         self.TLabelframe1.place(relx=0.016, rely=0.032, relheight=0.363
                 , relwidth=0.968)
         self.TLabelframe1.configure(relief='flat')
-        self.TLabelframe1.configure(text='''Resim Seç''')
+        self.TLabelframe1.configure(text='''Resim SeÃ§''')
         self.TLabelframe1.configure(borderwidth="1")
         self.TLabelframe1.configure(width=600)
         self.TLabelframe1.configure(relief='flat')
@@ -55,7 +54,7 @@ class GUI:
         self.SelectPic.place(relx=0.858, rely=0.217, height=25, width=76
                 , bordermode='ignore')
         self.SelectPic.configure(takefocus="")
-        self.SelectPic.configure(text='''Seç''')
+        self.SelectPic.configure(text='''SeÃ§''')
         self.SelectPic.configure(cursor="hand2")
 
         self.TLabel11 = ttk.Label(self.TLabelframe1)
@@ -90,7 +89,7 @@ class GUI:
         self.ThresholdL1.configure(foreground="#000000")
         self.ThresholdL1.configure(font="TkDefaultFont")
         self.ThresholdL1.configure(relief="flat")
-        self.ThresholdL1.configure(text='''Renk Eþiði :''')
+        self.ThresholdL1.configure(text='''Renk EÃ¾iÃ°i :''')
 
         self.Threshold = ttk.Entry(self.TLabelframe1)
         self.Threshold.place(relx=0.47, rely=0.565, relheight=0.165
@@ -111,7 +110,7 @@ class GUI:
         self.TLabel13.configure(foreground="#000000")
         self.TLabel13.configure(font="-family {Segoe UI} -size 7 -slant italic")
         self.TLabel13.configure(relief="flat")
-        self.TLabel13.configure(text='''Coding by Murat Aydýn and Berk Bilgiç''')
+        
         self.TLabel13.configure(width=152)
 		
 
@@ -131,7 +130,7 @@ class GUI:
         self.TLabel2.configure(foreground="#000000")
         self.TLabel2.configure(font="TkDefaultFont")
         self.TLabel2.configure(relief="flat")
-        self.TLabel2.configure(text='''Job Adý :''')
+        self.TLabel2.configure(text='''Job AdÃ½ :''')
 
         self.JobName = ttk.Entry(self.TLabelframe2)
         self.JobName.place(relx=0.1, rely=0.208, relheight=0.146, relwidth=0.168
@@ -154,7 +153,7 @@ class GUI:
         self.TLabel3.configure(foreground="#000000")
         self.TLabel3.configure(font="TkDefaultFont")
         self.TLabel3.configure(relief="flat")
-        self.TLabel3.configure(text='''Max Satýr :''')
+        self.TLabel3.configure(text='''Max SatÃ½r :''')
 
         self.TLabel4 = ttk.Label(self.TLabelframe2)
         self.TLabel4.place(relx=0.25, rely=0.486, height=19, width=45
@@ -163,7 +162,7 @@ class GUI:
         self.TLabel4.configure(foreground="#000000")
         self.TLabel4.configure(font="TkDefaultFont")
         self.TLabel4.configure(relief="flat")
-        self.TLabel4.configure(text='''Hýz :''')
+        self.TLabel4.configure(text='''HÃ½z :''')
 
         self.Speed = ttk.Entry(self.TLabelframe2)
         self.Speed.place(relx=0.333, rely=0.486, relheight=0.146, relwidth=0.05
@@ -266,7 +265,7 @@ class GUI:
         self.CreateJob.place(relx=0.850, rely=0.694, height=29, width=81
                 , bordermode='ignore')
         self.CreateJob.configure(takefocus="")
-        self.CreateJob.configure(text='''Oluþtur''')
+        self.CreateJob.configure(text='''OluÃ¾tur''')
         self.CreateJob.configure(cursor="hand2")
 
         self.Preview = ttk.Button(self.TLabelframe2)
