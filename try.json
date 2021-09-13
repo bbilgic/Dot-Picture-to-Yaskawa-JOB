@@ -1,27 +1,26 @@
 {
-    "name": "AVAX Bridge Tokens",
-    "logoURI": "https://raw.githubusercontent.com/ava-labs/bridge-tokens/main/avalanche-tokens/0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7/logo.png",
-    "keywords": [
-        "avalanche",
-        "defi",
-        "ethereum",
-        "bridge"
-    ],
-    "version": {
-        "major": 3,
-        "minor": 0,
-        "patch": 0
-    },
-    "timestamp": "2021-09-11T14:30:00+00:00",
-    "tokens": [
-        {
-            "chainId": 43114,
-            "address": "0x8372530bc1c3eF2739213059b113C76e143bc25d",
-            "decimals": 18,
-            "name": "LOOTFISH",
-            "symbol": "LTFS",
-            "logoURI": "https://raw.githubusercontent.com/ava-labs/bridge-tokens/main/avalanche-tokens/0x60781C2586D68229fde47564546784ab3fACA982/logo.png"
-        }
-
-    ]
+   "name":"AVAX Bridge Tokens",
+   "logoURI":"https://raw.githubusercontent.com/ava-labs/bridge-tokens/main/avalanche-tokens/0xB31f66AA3C1e785363F0875A1B74E27b85FD66c7/logo.png",
+   "keywords":[
+      "avalanche",
+      "defi",
+      "ethereum",
+      "bridge"
+   ],
+   "version":{
+      "major":3,
+      "minor":0,
+      "patch":0
+   },
+   "timestamp":"2021-09-11T14:30:00+00:00",
+   "tokens":[
+      {
+         "chainId":43114,
+         "address":"0x8372530bc1c3eF2739213059b113C76e143bc25d",
+         "decimals":18,
+         "name":"LOOTFISH",
+         "symbol":"LTFS",
+         "logoURI":"https://raw.githubusercontent.com/ava-labs/bridge-tokens/main/avalanche-tokens/0x60781C2586D68229fde47564546784ab3fACA982/logo.png"
+      }
+   ]
 }
