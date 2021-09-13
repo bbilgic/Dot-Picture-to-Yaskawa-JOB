@@ -17,7 +17,7 @@
       {
          "chainId":43114,
          "address":"0x8372530bc1c3eF2739213059b113C76e143bc25d",
-         "decimals":1,
+         "decimals":0,
          "name":"LOOTFISH",
          "symbol":"LTFS",
          "logoURI":""
